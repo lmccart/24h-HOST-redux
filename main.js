@@ -1,7 +1,28 @@
-let script;
+let script = [];
+let personalities = [];
 
 let path = document.documentElement.lang === 'en' ? 'script-en.json' : 'script-zh.json';
 $.get(path, (data) => {
   console.log(data);
-  $('#text').text("我想再次见到你").fitText();
+  personalities = data.personalities;
+  // script = script.concat(data.directions);
+  // script = script.concat(data.questions);
+  script = script.concat(data.script);
+  update();
+  setInterval(update, 5000);
+  $('#text').text(data.init.toUpperCase()).fitText();
 });
+
+const update = () => {
+  let item = '';
+  if (Math.random() < 0.5) {
+    item = randomItem(script);
+    item = item.replace('___', randomItem(personalities));
+  }
+  $('#text').text(item.toUpperCase()).fitText();
+}
+
+
+const randomItem = (arr) => {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
