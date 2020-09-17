@@ -1,0 +1,26 @@
+body {
+  background: black;
+  color: white;
+  font-family: 'Noto';
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Noto';
+  src: url("NotoSansSC-Regular.otf") format("opentype");
+}
