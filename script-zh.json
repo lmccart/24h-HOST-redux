@@ -1,6 +1,7 @@
 {
   "lang": "zh",
   "init": "初始化",
+  "say": "Say:",
   "directions": [
     "breathe",
     "confront",

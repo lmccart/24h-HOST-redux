@@ -1,6 +1,7 @@
 {
   "lang": "en",
   "init": "initializing",
+  "say": "Say:",
   "directions": [
     "breathe",
     "confront",
