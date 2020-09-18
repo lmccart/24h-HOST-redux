@@ -19,13 +19,12 @@ $.get(path, (data) => {
 });
 
 const update = () => {
-  let item = '';
   let rand = debug ? 1 : 0.5;
   if (Math.random() < rand) {
-    item = randomItem(script);
+    let item = randomItem(script);
     item = item.replace('___', randomItem(personalities));
+    $('#text').text(item.toUpperCase()).fitText();
   }
-  $('#text').text(item.toUpperCase()).fitText();
 }
 
 
