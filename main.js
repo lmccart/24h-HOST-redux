@@ -16,7 +16,7 @@ $.get(path, (data) => {
     return say + '<span class="phrase">' + i + '</span>';
   }));
   $('#text').text(data.init.toUpperCase()).fitText();
-  setInterval(update, debug ? 500 : 5000);
+  setInterval(update, debug ? 1000 : 5000);
   update();
 });
 

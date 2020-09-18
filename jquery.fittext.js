@@ -26,8 +26,8 @@
       var $this = $(this);
 
       let num = $this.text().length;
-      let x = Math.max(num, 5);
-      if (num > 9) x = num / 9 + 7;
+      let x = Math.max(num, 6);
+      if (num > 9) x = num / 7 + 7;
 
       // Resizer() resizes items based on the object width divided by the compressor * 10
       var resizer = function () {
