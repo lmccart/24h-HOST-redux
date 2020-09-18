@@ -2,24 +2,31 @@ body {
   background: black;
   color: #ffbcce;
   font-family: 'Noto';
+  margin: 0;
+  padding: 0;
 }
 
 #container {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 }
 
 #text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
+  position: absolute;
   width: 90%;
-  margin: 0 auto;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+.phrase {
+  color: #ff0e45;
+  display: inline;
 }
 
 @font-face {

@@ -93,10 +93,10 @@
     "Which rule is most important to you?",
     "What do you think we have in common?",
     "What do you always try to avoid doing in public?",
-    "What do you talk about when you can’t think of anything to say?",
+    "What do you talk about when you can't think of anything to say?",
     "Have you ever left a party without saying goodbye to anyone?",
     "What does it take to be a good guest?",
-    "What was the best compliment you’ve received?",
+    "What was the best compliment you've received?",
     "What do you spend the most time thinking about?",
     "If an AI were to replace you, what rules would it follow?",
     "If an AI were to replace you, what do you hope would be properly encoded?",
@@ -130,6 +130,7 @@
     "I feel time alone is an underrecognized pleasure",
     "I feel time is an underrecognized pleasure",
     "I hope we meet again soon",
-    "I get the sense you are feeling [ fill in an emotion ]"
+    "I get the sense you are feeling [ fill in an emotion ]",
+    "Please hold still, I am learning to recognize you"
   ]
 }
