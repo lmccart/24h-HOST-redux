@@ -9,13 +9,13 @@ $.get(path, (data) => {
   script = script.concat(data.questions);
   script = script.concat(data.script);
   update();
-  setInterval(update, 500);
+  setInterval(update, 5000);
   $('#text').text(data.init.toUpperCase()).fitText();
 });
 
 const update = () => {
   let item = '';
-  if (Math.random() < 1.5) {
+  if (Math.random() < 0.5) {
     item = randomItem(script);
     item = item.replace('___', randomItem(personalities));
   }
