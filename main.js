@@ -1,4 +1,4 @@
-let debug = false;
+let debug = true;
 let script = [];
 let personalities = [];
 let say;
